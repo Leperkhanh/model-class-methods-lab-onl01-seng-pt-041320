@@ -1,0 +1,42 @@
+<p>
+    <ol>
+        <% @boats.each do |boat| %>
+            <li>
+                <%= link_to boat.name, boat_path(boat) %>
+            </li>
+        <% end %>
+    </ol>    
+</p>
+
+
+<p>
+    <ol>
+        <% @boats.first_five.each do |boat| %>
+            <li>
+                <%= link_to boat.name, boat_path(boat) %>
+            </li>
+        <% end %>
+    </ol>    
+</p>
+
+<p>
+    <ol>
+        <% @boats.dinghy.each do |boat| %>
+            <li>
+                <%= link_to boat.name, boat_path(boat) %>
+            </li>
+        <% end %>
+    </ol>    
+</p>
+
+<p>
+    <ol>
+        <% @boats.ship.each do |boat| %>
+            <li>
+                <%= link_to boat.name, boat_path(boat) %>
+            </li>
+        <% end %>
+    </ol>    
+</p>
+
+
